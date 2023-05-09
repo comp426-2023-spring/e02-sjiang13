@@ -1,8 +1,10 @@
 body {
-}
+    background-color:pink;
+    text-align: center;
+    align-items: center;
 
-h1 {
 }
-
-p {
+button{
+    background-color:lightblue;
+    font-style: italic;
 }

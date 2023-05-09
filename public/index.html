@@ -1,12 +1,57 @@
 <html>
-    <head>
-        <title>Rock</title>
-        <!-- Link to your script file(s) and CSS in here somewhere -->
-    </head>
-    <body>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <!-- Link to your script file(s) and CSS in here somewhere -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
 
     <!-- Your interface markup goes here -->
-    <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
+    <h2>ROCK PAPER SCISSORS</h2>
+    <input type="radio" id="rps" name="game" value="rps" onclick="shots()" value="RPS">
+    <label for="rps">Play Rock Paper Scissors!</label>
+    <br>
+    <input type="radio" id="rpsls" name="game" value="rpsls" onclick="shots()" value="RPS">
+    <label for="rps">Play Rock Paper Scissors Lizard Spock!</label>
+    <br>
 
-    </body>
+    <input type="checkbox" id="opponent" name="playtype" value="opponent" onclick="shots()">
+    <label for="opponent">Play against an opponent?</label>
+    <br>
+
+
+    <div class="input-container rps">
+        <input type="radio" id="Rock" name="shot" value="Rock" class="shots">
+        <label class="input-container" for="Rock">Rock</label>
+    </div>
+    <div class="input-container rps">
+        <input type="radio" id="Paper" name="shot" value="Paper" class="shots">
+        <label class="input-container" for="Paper">Paper</label>
+    </div>
+    <div class="input-container rps">
+        <input type="radio" id="Scissors" name="shot" value="Scissors" class="shots">
+        <label class="input-container" for="Scissors">Scissors</label>
+    </div>
+    <div class="input-container rpsls">
+        <input type="radio" id="Lizard" name="shot" value="Lizard" class="shots">
+        <label class="input-container" for="Lizard">Lizard</label>
+    </div>
+    <div class="input-container rpsls">
+        <input type="radio" id="Spock" name="shot" value="Spock" class="shots">
+        <label class="input-container" for="Spock">Spock</label>
+    </div>
+    <br>
+
+    <button type="button" id="play" onclick="play()">PLAY!</button>
+    <button type="button" id="reset" onclick="startOver()">START OVER</button>
+    <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
+    <br>
+    </form>
+    <div id="results"></div>
+</body>
+
 </html>
